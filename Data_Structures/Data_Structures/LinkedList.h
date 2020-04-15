@@ -3,7 +3,6 @@
 
 class LinkedList
 {
-	// typedef LinkedList::ListNode ListNode;
 public:
 	/* Definition for singly-linked list */
 	struct ListNode {
@@ -20,15 +19,17 @@ public:
 	static LinkedList* get_linked_list_instance(void);
 
 	/* Make sure these are unacceptable, to prevent copies of the singelton */
-	LinkedList(const LinkedList&) = delete;
+	LinkedList(const LinkedList&)     = delete;
 	void operator=(const LinkedList&) = delete;
 
 	ListNode* get_list_node_element(int index);
-
 	void print_list(ListNode* ln);
 
 	~LinkedList();
 
+	/* ---------------------- */
+	/* Linked List Algorithms */
+	/* ---------------------- */
 	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
 };
 

@@ -37,6 +37,7 @@ LinkedList::ListNode* LinkedList::get_list_node_element(int index)
 	return &m_list_node_arr[index];
 }
 
+/* print the given list */
 void LinkedList::print_list(LinkedList::ListNode* ln)
 {
 	LinkedList::ListNode* tmp = ln;
@@ -47,12 +48,16 @@ void LinkedList::print_list(LinkedList::ListNode* ln)
 		if (tmp)
 			std::cout << "->";
 	}
-
 }
+
 /* default d'tor */
 LinkedList::~LinkedList()
 {
 }
+
+/* ---------------------- */
+/* Linked List Algorithms */
+/* ---------------------- */
 
 /*
 2. Add Two Numbers
