@@ -12,6 +12,7 @@ public:
 	~Vector();
 
 	std::vector<int> twoSum(std::vector<int>& nums, int target);
+	int maxArea(std::vector<int>& height);
 };
 
 /* -------------------------------------------------------------------------------------------------------------- */ 
